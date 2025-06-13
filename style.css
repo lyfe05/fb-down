@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Theme Variables */
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #000;
+    --container-bg: #fff;
+    --button-bg: #28a745;
+    --button-hover-bg: #218838;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --container-bg: #1e1e1e;
+    --button-bg: #4caf50;
+    --button-hover-bg: #388e3c;
+}
+
+/* Container Styles */
+.container {
+    background: var(--container-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Input Group Styles */
+.input-group {
+    margin: 15px 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--container-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button Styles */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 45%;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+button i {
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+    transform: translateY(-3px);
+}
+
+/* Download Link Styles */
+#downloadLink {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Dark Mode Toggle Button */
+.toggle-btn {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: var(--button-bg);
+    color: white;
+    border-color: var(--button-bg);
+}
